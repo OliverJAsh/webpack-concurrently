@@ -1,3 +1,3 @@
-import * as FpTs from 'fp-ts';
+import * as FpTs from "fp-ts";
 
 console.log(FpTs);
