@@ -2,7 +2,7 @@
   "name": "webpack-concurrently",
   "private": true,
   "scripts": {
-    "compile": "concurrently --names client,server 'webpack --progress --config config/webpack.client.config.js' 'webpack --progress --config config/webpack.server.config.js'"
+    "compile": "concurrently --names client,server --raw 'webpack --progress --config config/webpack.client.config.js' 'webpack --progress --config config/webpack.server.config.js'"
   },
   "dependencies": {
     "fp-ts": "^2.6.2"
