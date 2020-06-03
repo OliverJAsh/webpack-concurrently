@@ -1,3 +1,4 @@
+const WebpackBar = require("webpackbar");
 const pathHelpers = require("path");
 
 // Expect `__dirname` to be `/config/`.
@@ -16,6 +17,7 @@ const config = {
     path: TARGET_PATH,
     filename: OUTPUT_FILENAME,
   },
+  plugins: [new WebpackBar({ name: "client" })],
 };
 
 module.exports = config;
